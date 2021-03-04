@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<h1>The Fenceman Bid Generator</h1>
+
+<!--Fenceman Logo-->
+
+
+<img src="https://www.fencemancompany.com/wp-content/uploads/2016/04/FM_logo_02.png">
+<br>
+
+
+<!--form begin-->
+
+<h2>Wood Fence Form</h2>
+
+
+<p>
+  Enter the customer's first and last name.
+</p>
+
+<br>
+
+
+<!--first name-->
+    
+<form id=“form-user” action=“#” method=“post”>
+  <div class=“form-box error” data-errormsg=“”>
+    <label for=“input-first”>First</label>
+    <input type=“text” id=“input-first” autofocus placeholder= 'First Name' tabindex=“1” />
+    </div>
+  
+<!--last name-->
+
+  <div class=“form-box error” data-errormsg=“”>
+    <label for=“input-last”>Last</label>
+    <input type=“text” id=“input-last” autofocus placeholder = 'Last Name' tabindex=“1” />
+    </div>
+
+
+<br>
+  
+  
+
+<form>
+  
+  # of Boards: <input type="number" name="a" id="boardInput"><br> 
+# of 2x4s: <input type="number" name="b" id="twoByFourInput"><br> 
+# of C-Posts: <input type="number" name="c" id="cPostInput"><br> 
+# of Gate Posts: <input type="number" name="d" id="gatePostInput"><br> 
+# of Walk Gates: <input type="number" name="e" id="walkGateInput"><br> 
+# of Drive Gates: <input type="number" name="f" id="driveGateInput"><br> 
+  <button onclick="fenceFunction()">Generate Bid</button>
+
+
+</form>
+
+  
+  
+  
+
+  
+  
+  
+  
+  <!--form END-->
+
+  </form>
+
+  <!--Displaying Results-->
+
+<p id="bidDisplay">
+ <script>
+   document.getElementById(‘bidDisplay’).innerHTML = fenceFunction()
+  </script>
+</p>
+
